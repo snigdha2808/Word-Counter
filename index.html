@@ -20,8 +20,12 @@
         var text=this.value;
         var char=text.length;
         document.getElementById("char").innerHTML=char;
+        text=text.trim();
         var word=text.split(" ");
-        document.getElementById("word").innerHTML=word.length;;
+        let cleanList=word.filter(function(elm){
+          return elm!=" ";
+        });
+        document.getElementById("word").innerHTML=cleanList.length;;
 
       });
     </script>
