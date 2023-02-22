@@ -1,0 +1,53 @@
+body{
+  padding:50px 100px;
+  background-color: black;
+  background-image: url(download.jpeg);
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+h1{
+  text-align:center;
+  background-color: #205E61;
+  color:#fff;
+  padding:10px;
+  margin:0;
+  font-weight:600;
+}
+textarea{
+  width:99.3%;
+  border-color: #205E61;
+  border-radius: 0 0 8px 8px;
+  border:2px solid #205E61;
+  font-size: 19px;
+}
+p{
+  text-align:center;
+  background-color: #205E61;
+  font-size: 30px;
+  color:#fff;
+  font-weight: bold;
+  margin:0;
+}
+.wrapper.six{
+  background-color: #222222;
+}
+.flicker {
+  font-size:70px;
+  font-family: 'Merienda', sans-serif;
+  margin: 1rem auto;
+  color: #fffefe61;
+  background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.8, #fff)) no-repeat;
+  background-size: 110px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flick 1.5s infinite;
+}
+@keyframes flick {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
