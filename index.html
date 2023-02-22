@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="flicker">
+      Word And Character Counter
+    </h1>
+    <textarea name="name" rows="8" cols="80" id="textbox"></textarea>
+    <p>
+       <span id="word">0</span> Word &
+        <span id="char">0 </span> Character
+    </p>
+    <script>
+      let textbox=document.getElementById("textbox");
+      textbox.addEventListener('input',function(){
+        var text=this.value;
+        var char=text.length;
+        document.getElementById("char").innerHTML=char;
+        var word=text.split(" ");
+        document.getElementById("word").innerHTML=word.length;;
+
+      });
+    </script>
+  </body>
+</html>
